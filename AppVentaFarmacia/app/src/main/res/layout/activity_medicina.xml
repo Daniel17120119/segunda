@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A6FFDD00"
+    android:layout_height="match_parent"
+    tools:context=".medicinaAct">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_medicina" android:textSize="18sp"
+        android:textStyle="bold" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:text="precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precio_medicina"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_medicina" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:text="receta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/receta_medicina" android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/precio_medicina" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="750dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receta_medicina" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
